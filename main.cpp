@@ -6,8 +6,8 @@ int scene = 0,x=0,y=-195,opt=0 ;
 
 int wx1[] ={-670,-150,418};
 int wy1=-232;
-int cx[]={-540,-150,520,-30};
-int cy[]={210,130,250,250};
+float cx[]={-540,-150,520,-30};
+float cy[]={210,130,250,250};
 
 void options(int id){
     if(id == 1 && scene == 4)  opt = 1;
@@ -120,8 +120,12 @@ void draw_clouds(int r){
         glVertex2f(cx[i]+100,cy[i]);
       glEnd();
 
-       //if(cx[i]>-670) cx[i]=cx[i]-1;
-    //else cx[i]=670;
+    if(scene == 1){
+    if(cx[i]+300>-670) cx[i]=cx[i]-0.03;
+    else cx[i]=670;}
+    if(scene == 2 ){
+    if(cx[i]<670) cx[i]=cx[i]+0.06;
+    else cx[i]=-970;}
 
     }
 }
