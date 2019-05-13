@@ -99,8 +99,34 @@ void drawMainScene()
   drawText(name2, 100, 90, 0);
   drawText(usn2, 150, 70, 0);
   drawText(message, -70, -200, 0);
+
+
+
+
+
+
 }
 
+void explode() {
+   // setPaintColor(&color, 244, 163, 44);
+    color = createColor(244, 163, 44, 0);
+      glColor3f(color.red, color.green, color.blue);
+    drawCircle(1720, 850, 1.0f * expFactor);
+    //setPaintColor(&color, 237, 105, 74);
+    color = createColor(237, 105, 74, 0);
+      glColor3f(color.red, color.green, color.blue);
+    drawCircle(1730, 830, 1.0f * expFactor);
+    //setPaintColor(&color, 216, 85, 58);
+    color = createColor(216, 85, 58, 0);
+      glColor3f(color.red, color.green, color.blue);
+    drawCircle(1710, 835, 1.0f * expFactor);
+}
+
+void explosion(){
+
+
+
+}
 void draw_clouds(int r){
 
     int i = 0;
