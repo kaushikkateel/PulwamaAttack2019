@@ -241,3 +241,8 @@
 1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
+1558202500 source:c:\users\bhatk\onedrive\desktop\crap\pulwamaattack-cgproject\main.cpp
+	<stdio.h>
+	<GL/glut.h>
+	<math.h>
+

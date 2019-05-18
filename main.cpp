@@ -2,7 +2,7 @@
 #include <GL/glut.h>
 #include<math.h>
 
-int scene = 0,x=0,y=-195,opt=0 ;
+int scene = 0,x=0,y=-195,opt=0, clouds =0; ;
 
 int wx1[] ={-670,-150,418};
 int wy1=-232;
@@ -35,9 +35,11 @@ void DrawCircle(float cx, float cy, float cz, float r, int num_segments)
 {
 
 	int ii;
-	float theta, x, y, i;
+	float theta, x, y, i , j;
+	if(clouds == 1) j=num_segments/2;
+	else j=num_segments;
 	glBegin(GL_POLYGON);
-	for(ii = 0; ii < num_segments/2; ii++)
+	for(ii = 0; ii < j; ii++)
 	{
 
 		i = (float)ii/(float)num_segments;
@@ -106,7 +108,7 @@ void drawMainScene()
 
 
 }
-
+/*
 void explode() {
    // setPaintColor(&color, 244, 163, 44);
     color = createColor(244, 163, 44, 0);
@@ -126,10 +128,11 @@ void explosion(){
 
 
 
-}
+}*/
 void draw_clouds(int r){
 
     int i = 0;
+    clouds=1;
     for(;i<4;i++){
 
       color = createColor(255, 255, 255, 0);
@@ -154,7 +157,206 @@ void draw_clouds(int r){
     else cx[i]=-970;}
 
     }
+    clouds=0;
 }
+
+float i =0; //-690
+void bus()
+{
+    i=i+0.1;
+    glBegin(GL_POLYGON);
+    color = createColor(74, 147, 138, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-600+i,-245,0);
+    glVertex3f(-600+i,-75,0);
+    glVertex3f(-10+i,-75,0);
+    glVertex3f(15+i,-170,0);
+    glVertex3f(15+i,-245,0);
+    glEnd();
+
+      glBegin(GL_POLYGON);
+    color = createColor(76, 157, 150, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-590+i,-235,0);
+    glVertex3f(-590+i,-85,0);
+    glVertex3f(-20+i,-85,0);
+    glVertex3f(5+i,-180,0);
+    glVertex3f(5+i,-235,0);
+    glEnd();
+
+
+
+     glBegin(GL_POLYGON);
+    color = createColor(168, 225, 232, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-550+i,-150,0);
+    glVertex3f(-550+i,-100,0);
+    glVertex3f(-490+i,-100,0);
+    glVertex3f(-490+i,-150,0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+     color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-470+i,-150,0);
+    glVertex3f(-470+i,-100,0);
+    glVertex3f(-410+i,-100,0);
+    glVertex3f(-410+i,-150,0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-390+i,-150,0);
+    glVertex3f(-390+i,-100,0);
+    glVertex3f(-330+i,-100,0);
+    glVertex3f(-330+i,-150,0);
+    glEnd();
+
+       glBegin(GL_POLYGON);
+     color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-310+i,-150,0);
+    glVertex3f(-310+i,-100,0);
+    glVertex3f(-250+i,-100,0);
+    glVertex3f(-250+i,-150,0);
+    glEnd();
+
+       glBegin(GL_POLYGON);
+    color = createColor(168, 225, 232, 0);
+     color = createColor(132, 193, 186, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-230+i,-235,0);
+    glVertex3f(-230+i,-100,0);
+    glVertex3f(-170+i,-100,0);
+    glVertex3f(-170+i,-235,0);
+    glEnd();
+
+    glLineWidth(15);
+    glBegin(GL_LINES);
+     color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-215+i,-200,0);
+    glVertex3f(-215+i,-110,0);
+    glEnd();
+     glBegin(GL_LINES);
+     color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-185+i,-200,0);
+    glVertex3f(-185+i,-110,0);
+    glEnd();
+     glLineWidth(7);
+
+    glBegin(GL_LINES);
+     color = createColor(74, 147, 138, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-520+i,-72,0);
+    glVertex3f(-440+i,-72,0);
+    glEnd();
+
+    glBegin(GL_LINES);
+     color = createColor(74, 147, 138, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-200+i,-72,0);
+    glVertex3f(-120+i,-72,0);
+    glEnd();
+
+
+
+       glBegin(GL_POLYGON);
+   color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-150+i,-150,0);
+    glVertex3f(-150+i,-100,0);
+    glVertex3f(-90+i,-100,0);
+    glVertex3f(-90+i,-150,0);
+    glEnd();
+
+        glBegin(GL_POLYGON);
+   color = createColor(168, 225, 232, 0);
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-70+i,-150,0);
+    glVertex3f(-70+i,-100,0);
+    glVertex3f(-20+i,-100,0);
+    glVertex3f(-10+i,-150,0);
+    glEnd();
+
+         glBegin(GL_POLYGON);
+    color = createColor(137, 137, 137, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-610+i,-245,0);
+    glVertex3f(-610+i,-220,0);
+    glVertex3f(-530+i,-220,0);
+    glVertex3f(-530+i,-245,0);
+    glEnd();
+
+      glBegin(GL_POLYGON);
+  color = createColor(137, 137, 137, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-45+i,-245,0);
+    glVertex3f(-45+i,-220,0);
+    glVertex3f(25+i,-220,0);
+    glVertex3f(25+i,-245,0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+    color = createColor(250, 197, 29, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-15+i,-220,0);
+    glVertex3f(-15+i,-195,0);
+    glVertex3f(15+i,-195,0);
+    glVertex3f(15+i,-220,0);
+    glEnd();
+
+        glBegin(GL_POLYGON);
+    color = createColor(225, 74, 57, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-600+i,-220,0);
+    glVertex3f(-600+i,-195,0);
+    glVertex3f(-575+i,-195,0);
+    glVertex3f(-575+i,-220,0);
+    glEnd();
+
+
+    glLineWidth(3);
+
+    glBegin(GL_LINES);
+    color = createColor(0, 0, 0, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(-5+i,-100,0);
+    glVertex3f(30+i,-102,0);
+    glEnd();
+      glLineWidth(7);
+
+    glBegin(GL_LINES);
+    color = createColor(0, 0, 0, 0); //road
+    glColor3f(color.red, color.green, color.blue);
+    glVertex3f(30+i,-102,0);
+    glVertex3f(30+i,-130,0);
+    glEnd();
+    glLineWidth(1);
+
+      color = createColor(0, 0, 0, 0);
+      glColor3f(color.red, color.green, color.blue);
+      DrawCircle(-500+i,-235,0,30,200);
+
+        color = createColor(255, 255, 255, 0);
+      glColor3f(color.red, color.green, color.blue);
+      DrawCircle(-500+i,-235,0,15,200);
+
+
+       color = createColor(0, 0, 0, 0);
+      glColor3f(color.red, color.green, color.blue);
+      DrawCircle(-75+i,-235,0,30,200);
+
+        color = createColor(255, 255, 255, 0);
+      glColor3f(color.red, color.green, color.blue);
+      DrawCircle(-75+i,-235,0,15,200);
+
+
+
+}
+
 
 void drawWS(){
 
@@ -363,6 +565,7 @@ void drawFire(int xfire, int yfire){
     glEnd();
 
 }
+
 void drawBG(){
     glPushMatrix();
 
@@ -422,6 +625,8 @@ void drawBG(){
 
     //streetLight
     drawStreetLight();
+
+
 
     glPopMatrix();
 
@@ -517,6 +722,7 @@ void scene1(){
     //glClearColor(color.red, color.green, color.blue, 1 );
     glPushMatrix();
     drawBG();
+    bus();
     glPopMatrix();
 }
 void scene2(){
