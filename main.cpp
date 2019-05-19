@@ -8,6 +8,12 @@ int wx1[] ={-670,-150,418};
 int wy1=-232;
 float cx[]={-540,-150,520,-30};
 float cy[]={210,130,250,250};
+float i =-690; //-690
+float j= 400;
+int hasCrashed=0, flag2 = 0;
+float expFactor;
+float explodeTx = 1.0;
+float explodeTy = 1.0;
 
 void options(int id){
     if(id == 1 && scene == 4)  opt = 1;
@@ -108,27 +114,21 @@ void drawMainScene()
 
 
 }
-/*
+
 void explode() {
    // setPaintColor(&color, 244, 163, 44);
     color = createColor(244, 163, 44, 0);
       glColor3f(color.red, color.green, color.blue);
-    drawCircle(1720, 850, 1.0f * expFactor);
+    DrawCircle(15, -150,0, 1.0f * expFactor,200);
     //setPaintColor(&color, 237, 105, 74);
     color = createColor(237, 105, 74, 0);
       glColor3f(color.red, color.green, color.blue);
-    drawCircle(1730, 830, 1.0f * expFactor);
+    DrawCircle(25, -130,0, 1.0f * expFactor,200);
     //setPaintColor(&color, 216, 85, 58);
     color = createColor(216, 85, 58, 0);
       glColor3f(color.red, color.green, color.blue);
-    drawCircle(1710, 835, 1.0f * expFactor);
+    DrawCircle(5, -135,0, 1.0f * expFactor,200);
 }
-
-void explosion(){
-
-
-
-}*/
 void draw_clouds(int r){
 
     int i = 0;
@@ -149,6 +149,7 @@ void draw_clouds(int r){
         glVertex2f(cx[i]+100,cy[i]);
       glEnd();
 
+
     if(scene == 1){
     if(cx[i]+300>-670) cx[i]=cx[i]-0.03;
     else cx[i]=670;}
@@ -156,14 +157,19 @@ void draw_clouds(int r){
     if(cx[i]<670) cx[i]=cx[i]+0.06;
     else cx[i]=-970;}
 
+
     }
     clouds=0;
 }
 
-float i =0; //-690
+
 void bus()
 {
-    i=i+0.1;
+    if(hasCrashed == 0){
+        if(scene == 3)
+            i+=0.3;
+        else i+=0.1;
+    }
     glBegin(GL_POLYGON);
     color = createColor(74, 147, 138, 0); //road
     glColor3f(color.red, color.green, color.blue);
@@ -355,6 +361,131 @@ void bus()
 
 
 
+}
+void car()
+{
+    if(hasCrashed == 0){
+        if(scene == 3)
+            j-=3;
+        else j-=0.4;
+    }
+    glBegin(GL_POLYGON);
+    color = createColor(233, 76, 61, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(550+j,-245,0);
+    glVertex3f(275+j,-245,0);
+    glVertex3f(290+j,-210,0);
+    glVertex3f(295+j,-190,0);
+    glVertex3f(370+j,-183,0);
+    glVertex3f(400+j,-140,0);
+    glVertex3f(545+j,-135,0);
+    glEnd();
+
+    glLineWidth(12.5);
+    glBegin(GL_LINES);
+    glColor3f(0, 0, 0);
+    glVertex3f(555+j,-245,0);
+    glVertex3f(270+j,-245,0);
+    glEnd();
+    glLineWidth(1);
+
+    glBegin(GL_POLYGON);
+     color = createColor(197, 224, 240, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(378+j,-183,0);
+    glVertex3f(402+j,-145,0);
+    glVertex3f(450+j,-142,0);
+    glVertex3f(450+j,-183,0);
+    glEnd();
+
+     glBegin(GL_POLYGON);
+    color = createColor(197, 224, 240, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(468+j,-183,0);
+    glVertex3f(468+j,-145,0);
+    glVertex3f(535+j,-142,0);
+    glVertex3f(537+j,-183,0);
+    glEnd();
+
+
+     glBegin(GL_POLYGON);
+   color = createColor(0, 0, 0, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(550.1+j,-220,0);
+    glVertex3f(570+j,-220,0);
+    glVertex3f(570+j,-175,0);
+    glVertex3f(549.5+j,-175,0);
+    glEnd();
+
+      glBegin(GL_POLYGON);
+   color = createColor(184, 49, 46, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(550+j,-235,0);
+    glVertex3f(530+j,-235,0);
+    glVertex3f(530+j,-225,0);
+    glVertex3f(550+j,-225,0);
+    glEnd();
+
+    glBegin(GL_POLYGON);
+     color = createColor(250, 197, 29, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(280+j,-235,0);
+    glVertex3f(300+j,-235,0);
+    glVertex3f(300+j,-225,0);
+    glVertex3f(280+j,-225,0);
+    glEnd();
+
+    glLineWidth(1);
+     glBegin(GL_LINES);
+    color = createColor(169, 64, 47, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(459+j,-142,0);
+    glVertex3f(460+j,-238,0);
+    glEnd();
+
+     glBegin(GL_LINES);
+    color = createColor(169, 64, 47, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(368+j,-188,0);
+    glVertex3f(368+j,-238,0);
+    glEnd();
+
+
+
+     glLineWidth(5);
+    glBegin(GL_LINES);
+    glColor3f(0, 0, 0);
+    glVertex3f(450+j,-190,0);
+    glVertex3f(430+j,-190,0);
+    glEnd();
+
+     glBegin(GL_LINES);
+    color = createColor(247, 146, 36, 0);
+      glColor3f(color.red, color.green, color.blue);
+    glVertex3f(365+j,-195,0);
+    glVertex3f(350+j,-195,0);
+    glEnd();
+    glLineWidth(1);
+
+
+
+     color = createColor(0,0,0, 0); //wheel
+    glColor3f(color.red, color.green, color.blue);
+    DrawCircle(330+j,-245,0,30,480);
+
+     color = createColor(147,135,139, 0); //wheel
+    glColor3f(color.red, color.green, color.blue);
+    DrawCircle(330+j,-245,0,20,480);
+
+
+     color = createColor(0,0,0, 0); //wheel
+    glColor3f(color.red, color.green, color.blue);
+    DrawCircle(500+j,-245,0,30,480);
+
+     color = createColor(147,135,139, 0); //wheel
+    glColor3f(color.red, color.green, color.blue);
+    DrawCircle(500+j,-245,0,20,480);
+    glLineWidth(1);
 }
 
 
@@ -663,8 +794,7 @@ void keyboardDown(unsigned char key, int x, int y) {
 
   switch(key) {
   case 49: //enter 1
-    scene = 1;
-    printf("f");
+    scene = 1;;
     break;
   case 50: //enter 2
     scene = 2;
@@ -728,12 +858,45 @@ void scene1(){
 void scene2(){
     glPushMatrix();
     drawBG();
+    car();
     glPopMatrix();
 
 }
 void scene3(){
+    int k;
     glPushMatrix();
-    drawFire(0.0,0.0);
+    if(flag2 == 0){
+        i =-690;
+        j= 6400;
+        flag2=1;
+    }
+
+    drawBG();
+    bus();
+    car();
+    if(int(j) == int(i-276)) hasCrashed = 1;
+    printf("%f %f\n",j,k);
+    if (hasCrashed){
+
+        glPushMatrix();
+        glLoadIdentity();
+        glScalef(explodeTx, explodeTy, 0);
+        glTranslatef(0.05, 0, 0);
+        explode();
+        glPopMatrix();
+
+        glPushMatrix();
+        glLoadIdentity();
+        glScalef(explodeTx, explodeTy, 0);
+        glTranslatef(0.1, 0, 0);
+        explode();
+        glPopMatrix();
+         if (explodeTx <= 1.3) {
+            explodeTx = explodeTy += 0.001;
+        }
+        expFactor = (float) (expFactor >= 1000 ? expFactor : expFactor + 0.97);
+        if (expFactor>800)scene=4;
+    }
     glPopMatrix();
 }
 void scene4(){
