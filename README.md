@@ -17,6 +17,10 @@ cd PulwamaAttack-CGproject.git
 cc pulwama2k19.c -lGL -lGLU -lglut -lm
 
 ./a.out
+
+press 1 to go to the next scene 
+press 2 to go to previous scene
+
 ```
 
 ## ScreenShots
