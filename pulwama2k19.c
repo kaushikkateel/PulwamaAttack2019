@@ -924,6 +924,7 @@ void draw() {
 void idle() {
 
   glutPostRedisplay();
+	
 }
 
 
