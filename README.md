@@ -5,7 +5,7 @@ Requires OPENGL installed on your system.
 sudo apt update
 sudo apt install freeglut3-dev
 ```
-## Usage
+# Usage
 1. Clone this repository
 ```
 git clone https://github.com/kaushikkateel/PulwamaAttack-CGproject.git
