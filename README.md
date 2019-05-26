@@ -27,8 +27,10 @@ press 2 to go to previous scene
 
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/2.PNG)
 
+![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/3.PNG)
+
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/4.PNG)
 
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/5.png)
 
-![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/3.PNG)
+
