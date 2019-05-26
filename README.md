@@ -33,4 +33,6 @@ press 2 to go to previous scene
 
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/5.png)
 
+![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/WhatsApp%20Video%202019-05-26%20at%207.10.30%20PM.mp4)
+
 
