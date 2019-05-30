@@ -7,12 +7,15 @@ sudo apt install freeglut3-dev
 ```
 ## Usage
 1. Clone this repository
+
 ```
 git clone https://github.com/kaushikkateel/PulwamaAttack-CGproject.git
 
 cd PulwamaAttack-CGproject.git
 ```
+
 2. Run the project
+
 ```
 cc pulwama2k19.c -lGL -lGLU -lglut -lm
 
@@ -22,6 +25,7 @@ press 1 to go to the next scene
 press 2 to go to previous scene
 
 ```
+
 ## Video link
   https://youtu.be/KwtwVnzJZBo
 
