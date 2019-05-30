@@ -6,6 +6,7 @@ sudo apt update
 sudo apt install freeglut3-dev
 ```
 ## Usage
+
 1. Clone this repository
 
 ```
