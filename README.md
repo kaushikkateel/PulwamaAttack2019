@@ -41,7 +41,7 @@ press 2 to go to previous scene
 
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/5.png)
 
-# Contributors
+## Contributors
 
 <p float="left">
   <a href="https://github.com/kaushikkateel"><img src="https://avatars3.githubusercontent.com/u/49521970?s=400&v=4" width="110" height="110" /></a>
