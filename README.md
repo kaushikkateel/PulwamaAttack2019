@@ -28,7 +28,7 @@ press 2 to go to previous scene
 ```
 
 ## Video link
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KwtwVnzJZBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% include youtubePlayer.html id="KwtwVnzJZBo" %}
 
 
 ## ScreenShots
