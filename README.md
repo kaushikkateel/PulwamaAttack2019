@@ -32,11 +32,11 @@ press 2 to go to previous scene
 
 
 ## ScreenShots
-<img src="https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/1.PNG" alt=""></img>
-<img src="https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/2.PNG" alt="">
-<img src="https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/3.PNG" alt="">
-<img src="https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/4.PNG" alt="">
-<img src="https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/5.PNG" alt="">
+<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/2.PNG" alt="">
+<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/3.PNG" alt="">
+<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/4.PNG" alt="">
+<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/5.PNG" alt="">
+<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/1.PNG" alt="">
 
 ### Contributors
 
