@@ -35,7 +35,7 @@ press 2 to go to previous scene
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/2.PNG" alt="" width="500" height="300">
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/3.PNG" alt="" width="500" height="300">
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/4.PNG" alt="" width="500" height="300">
-<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/5.PNG" alt="" width="500" height="300">
+<img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/5.png" alt="" width="500" height="300">
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/1.PNG" alt="" width="500" height="300">
 
 ### Contributors
