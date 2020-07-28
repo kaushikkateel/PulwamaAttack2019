@@ -27,11 +27,12 @@ press 2 to go to previous scene
 
 ```
 
-## Video link
+## Video
 {% include youtubePlayer.html id="KwtwVnzJZBo" %}
 
 
 ## ScreenShots
+
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/2.PNG" alt="">
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/3.PNG" alt="">
 <img src="https://raw.githubusercontent.com/kaushikkateel/PulwamaAttack2019/master/images/4.PNG" alt="">
