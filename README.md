@@ -33,6 +33,8 @@ press 2 to go to previous scene
 
 ## ScreenShots
 
+<img src="https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/2.PNG" alt="">
+
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/2.PNG)
 
 ![alt text](https://github.com/kaushikkateel/PulwamaAttack-CGproject/blob/master/images/3.PNG)
