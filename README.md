@@ -1,4 +1,4 @@
-## PulwamaAttack-CG mini project
+## PulwamaAttack-CG mini project 🔫
 
 Requires OPENGL installed on your system.
 ```
@@ -7,7 +7,7 @@ sudo apt install freeglut3-dev
 ```
 ## Usage
 
-Clone this repository
+Clone this repository 
 
 ```
 git clone https://github.com/kaushikkateel/PulwamaAttack-CGproject.git
@@ -15,7 +15,7 @@ git clone https://github.com/kaushikkateel/PulwamaAttack-CGproject.git
 cd PulwamaAttack-CGproject.git
 ```
 
-Run the project
+Run the project 💻
 
 ```
 cc pulwama2k19.c -lGL -lGLU -lglut -lm
