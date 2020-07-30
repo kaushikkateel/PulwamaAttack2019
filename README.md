@@ -1,5 +1,5 @@
-## PulwamaAttackC
-# A CG mini project🔫
+# Pulwama attack🔫
+## A CG mini project
 
 Requires OPENGL installed on your system.
 ```
